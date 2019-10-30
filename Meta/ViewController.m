@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import "CLogReaderWrapper.h"
 
-@interface ViewController ()
+@interface ViewController () <CLogReaderProtocol> {
+}
 
 @end
 
@@ -17,7 +19,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [CLogReaderWrapper sharedReader].delegate = self;
+    [[CLogReaderWrapper sharedReader] setFilter:"123"];
 }
 
+
+#pragma mark - CLogReaderProtocol
+
+- (void)stringFound:(char *)str {
+    NSLog(@"%@", [NSString stringWithUTF8String:str]);
+}
 
 @end

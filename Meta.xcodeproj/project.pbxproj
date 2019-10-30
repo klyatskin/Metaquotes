@@ -13,6 +13,8 @@
 		D1C77A682369D33A006D72CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1C77A672369D33A006D72CC /* Assets.xcassets */; };
 		D1C77A6B2369D33A006D72CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C77A692369D33A006D72CC /* LaunchScreen.storyboard */; };
 		D1C77A6E2369D33A006D72CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C77A6D2369D33A006D72CC /* main.m */; };
+		D1C77A762369D37C006D72CC /* CLogReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1C77A742369D37C006D72CC /* CLogReader.cpp */; };
+		D1C77A7E236A3436006D72CC /* CLogReaderWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1C77A7D236A3436006D72CC /* CLogReaderWrapper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		D1C77A6A2369D33A006D72CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1C77A6C2369D33A006D72CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1C77A6D2369D33A006D72CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1C77A742369D37C006D72CC /* CLogReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CLogReader.cpp; sourceTree = "<group>"; };
+		D1C77A752369D37C006D72CC /* CLogReader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CLogReader.hpp; sourceTree = "<group>"; };
+		D1C77A7C236A3411006D72CC /* CLogReaderWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLogReaderWrapper.h; sourceTree = "<group>"; };
+		D1C77A7D236A3436006D72CC /* CLogReaderWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CLogReaderWrapper.mm; sourceTree = "<group>"; };
+		D1C77A7F236A3A16006D72CC /* CLogReaderInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLogReaderInterface.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,11 @@
 		D1C77A5D2369D339006D72CC /* Meta */ = {
 			isa = PBXGroup;
 			children = (
+				D1C77A7F236A3A16006D72CC /* CLogReaderInterface.h */,
+				D1C77A752369D37C006D72CC /* CLogReader.hpp */,
+				D1C77A742369D37C006D72CC /* CLogReader.cpp */,
+				D1C77A7C236A3411006D72CC /* CLogReaderWrapper.h */,
+				D1C77A7D236A3436006D72CC /* CLogReaderWrapper.mm */,
 				D1C77A5E2369D339006D72CC /* AppDelegate.h */,
 				D1C77A5F2369D339006D72CC /* AppDelegate.m */,
 				D1C77A612369D339006D72CC /* ViewController.h */,
@@ -143,7 +155,9 @@
 			files = (
 				D1C77A632369D339006D72CC /* ViewController.m in Sources */,
 				D1C77A6E2369D33A006D72CC /* main.m in Sources */,
+				D1C77A7E236A3436006D72CC /* CLogReaderWrapper.mm in Sources */,
 				D1C77A602369D339006D72CC /* AppDelegate.m in Sources */,
+				D1C77A762369D37C006D72CC /* CLogReader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,9 +299,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y9ZFK399Y3;
 				INFOPLIST_FILE = Meta/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +319,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y9ZFK399Y3;
 				INFOPLIST_FILE = Meta/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
