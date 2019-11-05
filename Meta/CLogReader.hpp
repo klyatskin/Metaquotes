@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include "CLogReaderInterface.h"
 
+
 class CLogReader
 {
 public:
@@ -22,8 +23,13 @@ public:
     void SetCallbackInstance(CallbackInstance instance);
 
 private:
+    bool WildTextCompare(const char *pTameText,   // A string without wildcards
+                         const char *pWildText    // A (potentially) corresponding string with wildcards
+                         );
+private:
     char *mFilter;
     void *mCallbackInstance;
+    int mOldStart;
 };
 
 

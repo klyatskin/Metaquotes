@@ -15,6 +15,7 @@
 		D1C77A6E2369D33A006D72CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C77A6D2369D33A006D72CC /* main.m */; };
 		D1C77A762369D37C006D72CC /* CLogReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1C77A742369D37C006D72CC /* CLogReader.cpp */; };
 		D1C77A7E236A3436006D72CC /* CLogReaderWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = D1C77A7D236A3436006D72CC /* CLogReaderWrapper.mm */; };
+		D1E1912A237075A2008B1E86 /* UIViewController+Message.m in Sources */ = {isa = PBXBuildFile; fileRef = D1E19128237075A1008B1E86 /* UIViewController+Message.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		D1C77A7C236A3411006D72CC /* CLogReaderWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLogReaderWrapper.h; sourceTree = "<group>"; };
 		D1C77A7D236A3436006D72CC /* CLogReaderWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CLogReaderWrapper.mm; sourceTree = "<group>"; };
 		D1C77A7F236A3A16006D72CC /* CLogReaderInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLogReaderInterface.h; sourceTree = "<group>"; };
+		D1E19128237075A1008B1E86 /* UIViewController+Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Message.m"; sourceTree = "<group>"; };
+		D1E19129237075A1008B1E86 /* UIViewController+Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Message.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,7 @@
 		D1C77A5D2369D339006D72CC /* Meta */ = {
 			isa = PBXGroup;
 			children = (
+				D1E19124237074D6008B1E86 /* Utilities */,
 				D1C77A7F236A3A16006D72CC /* CLogReaderInterface.h */,
 				D1C77A752369D37C006D72CC /* CLogReader.hpp */,
 				D1C77A742369D37C006D72CC /* CLogReader.cpp */,
@@ -81,6 +85,15 @@
 				D1C77A6D2369D33A006D72CC /* main.m */,
 			);
 			path = Meta;
+			sourceTree = "<group>";
+		};
+		D1E19124237074D6008B1E86 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D1E19129237075A1008B1E86 /* UIViewController+Message.h */,
+				D1E19128237075A1008B1E86 /* UIViewController+Message.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +171,7 @@
 				D1C77A7E236A3436006D72CC /* CLogReaderWrapper.mm in Sources */,
 				D1C77A602369D339006D72CC /* AppDelegate.m in Sources */,
 				D1C77A762369D37C006D72CC /* CLogReader.cpp in Sources */,
+				D1E1912A237075A2008B1E86 /* UIViewController+Message.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

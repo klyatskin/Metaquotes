@@ -34,7 +34,10 @@ void callStringFoundCallback(CallbackInstance instance, char *str) {
     return _reader.SetFilter(filter);
 }
 
-//- bool AddSourceBlock(const char* block,const size_t block_size); // добавление очередного блока текстового файла
+- (bool)addSourceBlock:(const char *)block withSize:(size_t)block_size {
+    return _reader.AddSourceBlock(block, block_size);
+}
+
 
 #pragma mark - CLogReaderProtocol
 

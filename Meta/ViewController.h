@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController 
+@property (retain, nonatomic) IBOutlet UITextField *textURL;
+@property (retain, nonatomic) IBOutlet UITextField *textMask;
+@property (retain, nonatomic) IBOutlet UITextView *textView;
 
 
 @end

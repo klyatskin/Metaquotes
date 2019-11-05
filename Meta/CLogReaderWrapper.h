@@ -25,6 +25,8 @@
 
 + (CLogReaderWrapper *)sharedReader;
 - (bool)setFilter:(const char *)filter;
+- (bool)addSourceBlock:(const char *)block withSize:(size_t)block_size;
+
 
 @property (nonatomic, assign) id <CLogReaderProtocol> delegate;
 
